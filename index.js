@@ -152,4 +152,4 @@ client.elevation = message => {
 });*/
 
 
-client.login("NDY1OTM0ODY3MDkyMzQwNzM2.DjX3Ng.rsCxDhGdi4MKgdhATI1NrCzO8OY");
+client.login(process.env.TOKEN);
