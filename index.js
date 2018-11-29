@@ -89,15 +89,7 @@ fs.readdir('./commands/NSFW/', (err, filesnsfw) => {
       client.aliases.set(alias, props.help.name);
     });
   });
-   fs.readdir('./commands/Music/', (err, filesmusic) => {
-    if (err) console.error(err);
-    filesmusic.forEach(f => {
-      const props = require(`./commands/Music/${f}`);
-      client.commands.set(props.help.name, props);
-      props.conf.aliases.forEach(alias => {
-        client.aliases.set(alias, props.help.name);
-      });
-    });
+
   
   var totalcmd =  Math.floor(filesfun.length + filesinfo.length + filesmod.length + filessocial.length + filesnsfw.length + filesadmin.length + filesmusic.length + filesimg.length + filescanvas.length);
 console.log(bluecolor(`Il y a un total de ${totalcmd} commandes 👍.`));
@@ -108,14 +100,6 @@ console.log(bluecolor(`Il y a un total de ${totalcmd} commandes 👍.`));
 });
 });
 });
-});
-});
-
-fs.readdir('./fonctions/', (err, filesmusic2) => {
-  if (err) console.error(err);
-  filesmusic2.forEach(f => {
-    const props = require(`./fonctions/${f}`);
-  });
 });
 
 client.elevation = message => {
