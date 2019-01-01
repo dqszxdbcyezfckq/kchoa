@@ -14,4 +14,25 @@
  	"configRev": "0.1.5",
  	"language" : "fr",
   	"language_comments" : "en"
+	
+
+
+
+	"servers": [
+
+		"519592430308163590"
+
+    	],
+
+	"roleName": "#Rainbow",
+
+	"colors": 12,
+
+	"speed": 60000,
+
+	"logging": false,
+
+  	"adminID": "281125214098685954"
+
 }
+
