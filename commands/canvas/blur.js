@@ -43,5 +43,6 @@ exports.conf = {
   exports.help = {
     name: `${type}`,
     description: `Envoie une image ${type}.`,
-    usage: `${type}`
+    usage: `${type}`,
+    category: 'canvas'
   };

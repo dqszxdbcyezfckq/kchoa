@@ -37,5 +37,6 @@ exports.run = (client, message, args) => {
   exports.help = {
     name: 'nekogif',
     description: 'Envoie un gif aléatoire de neko',
-    usage: 'nekogif'
+    usage: 'nekogif',
+    category: 'image'
   };

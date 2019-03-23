@@ -22,5 +22,6 @@ exports.conf = {
   exports.help = {
     name: 'google',
     description: 'Faîte n\'importe qu\'elle recherche google facilement et rapidement.',
-    usage: 'google <recherche>'
+    usage: 'google <recherche>',
+    category: 'recherche'
   };

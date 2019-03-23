@@ -13,7 +13,7 @@ exports.run = (client, message, args) => {
 
     
     if(!args[0] || args.length < 1){
-        message.channel.send(':x: | Tu dois définir l\'ID de la personne à ban.\n```\nUtilisation: ' + prefix + "ban <ID>\n```")
+        message.channel.send(':x: | Tu dois définir l\'ID de la personne à ban.\n```\nUtilisation: ' + prefix + "hackban <ID>\n```")
         return
     }else{
 
@@ -42,5 +42,6 @@ exports.conf = {
   exports.help = {
     name: 'hackban',
     description: 'Ban l\'utilisateur mentionné',
-    usage: 'hackban <ID>'
+    usage: 'hackban <ID>',
+    category: 'admin'
   };

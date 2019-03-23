@@ -32,6 +32,7 @@ exports.conf = {
   
   exports.help = {
     name: 'fuck',
-    description: 'Envoie une image aléatoire de pénis',
-    usage: 'fuck'
+    description: 'Envoie un gif aléatoire de porno',
+    usage: 'fuck',
+    category: 'porn'
   };

@@ -58,5 +58,6 @@ exports.conf = {
 exports.help = {
   name: 'lockdown',
   description: 'verrouille un channel pour la durée définie ``s``, ``m``, ``h``, ``d``',
-  usage: 'lockdown <durée>'
+  usage: 'lockdown <durée>',
+  category: 'admin'
 };

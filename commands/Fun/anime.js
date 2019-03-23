@@ -87,5 +87,6 @@ const config = require('../../config.json')
       exports.help = {
         name: 'anime',
         description: 'Vous donne des infos sur l\'anime de votre choix',
-        usage: 'anime <anime a chercher>'
+        usage: 'anime <anime a chercher>',
+        category: 'divers'
       };

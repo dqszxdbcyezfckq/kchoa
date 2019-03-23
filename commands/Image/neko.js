@@ -38,5 +38,6 @@ try {
   exports.help = {
     name: 'neko',
     description: 'Envoie une image aléatoire de neko.',
-    usage: 'neko'
+    usage: 'neko',
+    category: 'image'
   };

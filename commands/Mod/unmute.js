@@ -43,5 +43,6 @@ exports.conf = {
 exports.help = {
   name: 'unmute',
   description: 'Unmute l\'utilisateur mentionné',
-  usage: 'unmute <mention>'
+  usage: 'unmute <mention>',
+  category: 'mod'
 };

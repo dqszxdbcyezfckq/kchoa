@@ -58,5 +58,6 @@ var punch = [
   exports.help = {
     name: 'punch',
     description: 'Pour frapper les gens que vous aimez pas',
-    usage: 'punch [mention]'
+    usage: 'punch <mention>',
+    category: 'action'
   };

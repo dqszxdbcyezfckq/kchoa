@@ -34,6 +34,7 @@ exports.run = (client, message, args) => {
   exports.help = {
     name: 'purge',
     description: 'Purge X nombre de message.',
-    usage: 'purge <nombre>'
+    usage: 'purge <nombre>',
+    category: 'mod'
   };
   

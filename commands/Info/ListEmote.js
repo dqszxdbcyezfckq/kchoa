@@ -21,5 +21,6 @@ message.channel.send(ListEmbed);
   exports.help = {
     name: 'listemote',
     description: 'Je vous donne tout les emotes du serveur.',
-    usage: 'listemote'
+    usage: 'listemote',
+    category: 'info'
   };

@@ -32,5 +32,6 @@ exports.conf = {
   exports.help = {
     name: 'snapchat',
     description: 'Envoie une image aléatoire de porno snap',
-    usage: 'snapchat'
+    usage: 'snapchat',
+    category: 'porn'
   };

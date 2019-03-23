@@ -23,7 +23,7 @@ exports.run = (client, message, params) => {
     .setTitle(`Liste des commandes de la catégorie nsfw`)
     .setDescription(`(Il y a un total de **${filesinfo.length}** commandes dans cette catégorie)\n\nUtilise **${prefix}help <commande>** pour plus d'infos sur une commande`)
     .setColor(Math.floor(Math.random() * 16777214) + 1)
-    .addField("Image", "`4k`, `amateur`, `asian`, `cosplay`, `dick`, `gif`, `hentai`, `milf`, `public`, `pussy`, `snapchat`, `uniform`")
+    .addField("Image", `${client.commands.filter(cmd => cmd.help.category =="porn").map(c => `\`\`${c.help.name}\`\``)}`)
     .setFooter(client.user.username, client.user.displayAvatarURL).setTimestamp()
 
     message.channel.send(HelpEmbed);

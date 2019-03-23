@@ -37,5 +37,6 @@ exports.run = (client, message, args) => {
   exports.help = {
     name: 'lizard',
     description: 'Envoie une image aléatoire de chat',
-    usage: 'lizard'
+    usage: 'lizard',
+    category: 'image'
   };

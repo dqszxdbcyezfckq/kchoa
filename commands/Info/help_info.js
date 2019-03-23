@@ -21,8 +21,8 @@ exports.run = (client, message, params) => {
     .setTitle(`Liste des commandes de la catégorie info`)
     .setDescription(`(Il y a un total de **${filesinfo.length}** commandes dans cette catégorie)\n\nUtilise **${prefix}help <commande>** pour plus d'infos sur une commande`)
     .setColor(Math.floor(Math.random() * 16777214) + 1)
-    .addField("Info", "`help`, `botinfo`, `serverinfo`, `userinfo`, `ping`, `invite`, `listemote`, `listrole`")
-    .addField("Recherche", "`weather`, `google`, `youtube`")
+    .addField("Info", `${client.commands.filter(cmd => cmd.help.category =="info").map(c => `\`\`${c.help.name}\`\``)}`)
+    .addField("Recherche", `${client.commands.filter(cmd => cmd.help.category =="recherche").map(c => `\`\`${c.help.name}\`\``)}`)
     .setFooter(client.user.username, client.user.displayAvatarURL).setTimestamp()
 
     message.channel.send(HelpEmbed);

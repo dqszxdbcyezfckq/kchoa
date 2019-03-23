@@ -25,10 +25,10 @@ exports.run = (client, message, params) => {
     .setTitle(`Liste des commandes de la catégorie fun`)
     .setDescription(`(Il y a un total de **${filesinfo.length + filescanvas.length + filesimg.length}** commandes dans cette catégorie)\n\nUtilise **${prefix}help <commande>** pour plus d'infos sur une commande`)
     .setColor(Math.floor(Math.random() * 16777214) + 1)
-    .addField("Divers", "`8ball`, `anime`, `avatar`, `pollc`, `reverse`, `roll`, `say`")
-    .addField("Image", "`neko`, `nekogif`, `cat`, `lizard`")
-    .addField("Canvas", "`triggered`, `triggeredinvert`, `rainbow`, `blur`, `blurple`, `convinvert`, `convolute`, `darkgreen`, `darkred`, `discord`, `displace`, `fire`, `french`, `ghost`, `grayscale`, `green`, `invert`, `orangly`, `pixelate`, `posterize`, `red`, `reddit`, `rgb`, `sepia`, `spotify`, `steam`, `time`, `twitch`")
-    .addField("Jeux", "`osu`") 
+    .addField("Divers", `${client.commands.filter(cmd => cmd.help.category =="divers").map(c => `\`\`${c.help.name}\`\``)}`)
+    .addField("Image", `${client.commands.filter(cmd => cmd.help.category =="image").map(c => `\`\`${c.help.name}\`\``)}`)
+    .addField("Canvas", `${client.commands.filter(cmd => cmd.help.category =="canvas").map(c => `\`\`${c.help.name}\`\``)}`)
+    .addField("Jeux", `${client.commands.filter(cmd => cmd.help.category =="game").map(c => `\`\`${c.help.name}\`\``)}`)
     .setFooter(client.user.username, client.user.displayAvatarURL).setTimestamp()
 
     message.channel.send(HelpEmbed);

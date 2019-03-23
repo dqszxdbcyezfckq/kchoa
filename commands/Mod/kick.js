@@ -39,5 +39,6 @@ exports.conf = {
 exports.help = {
   name: 'kick',
   description: 'Kick l\'utilisateur mentionné',
-  usage: 'kick <mention>'
+  usage: 'kick <mention>',
+  category: 'mod'
 };
