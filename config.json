@@ -1,4 +1,6 @@
 {
 	"prefix": "//",
-	"rvotes": "99"
+	"rvotes": "99",
+	"modrolename": "Do not enter name",
+	"adminrolename": "Do not enter name"
 }

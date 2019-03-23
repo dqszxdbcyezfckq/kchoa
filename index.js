@@ -1,10 +1,8 @@
-const Discord = require('discord.js');
+﻿const Discord = require('discord.js');
 const client = new Discord.Client();
 const config = require('./config.json');
 const chalk = require('chalk');
 const fs = require('fs');
-const Canvas = require('canvas');
-const snekfetch = require('snekfetch');
 require('./util/eventLoader')(client);
 const bluecolor = chalk.keyword('blue');
 
@@ -102,6 +100,44 @@ console.log(bluecolor(`Il y a un total de ${totalcmd} commandes 👍.`));
 });
 });
 
+/*const size    = config.colors;
+const rainbow = new Array(size);
+
+for (var i=0; i<size; i++) {
+  var red   = sin_to_hex(i, 0 * Math.PI * 2/3); // 0   deg
+  var blue  = sin_to_hex(i, 1 * Math.PI * 2/3); // 120 deg
+  var green = sin_to_hex(i, 2 * Math.PI * 2/3); // 240 deg
+
+  rainbow[i] = '#'+ red + green + blue;
+}
+
+function sin_to_hex(i, phase) {
+  var sin = Math.sin(Math.PI / size * 2 * i + phase);
+  var int = Math.floor(sin * 127) + 128;
+  var hex = int.toString(16);
+
+  return hex.length === 1 ? '0'+hex : hex;
+}
+
+let place = 0;
+const servers = config.servers;
+
+function changeColor() {
+  for (let index = 0; index < servers.length; ++index) {
+    client.guilds.get(servers[index]).roles.find('name', config.roleName).setColor(rainbow[place])
+        .catch(console.error);
+
+    if(config.logging){
+      console.log(`[ColorChanger] Changed color to ${rainbow[place]} in server: ${servers[index]}`);
+    }
+    if(place == (size - 1)){
+      place = 0;
+    }else{
+      place++;
+    }
+  }
+}*/
+
 client.elevation = message => {
   /* This function should resolve to an ELEVATION level which
      is then sent to the command handler for verification*/
@@ -113,43 +149,5 @@ client.elevation = message => {
   if (message.author.id === config.ownerid) permlvl = 4;
   return permlvl;
 };
-
-/*client.on('guildMemberAdd', async member => {
-	const channel = member.guild.channels.find(ch => ch.name === 'kuku');
-	if (!channel) return;
-
-	const canvas = Canvas.createCanvas(700, 250);
-	const ctx = canvas.getContext('2d');
-
-	const background = await Canvas.loadImage('./Emote/OchakoChoqué.jpg');
-	ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
-
-	ctx.strokeStyle = '#74037b';
-	ctx.strokeRect(0, 0, canvas.width, canvas.height);
-
-	// Slightly smaller text placed above the member's display name
-	ctx.font = '28px sans-serif';
-	ctx.fillStyle = '#ffffff';
-	ctx.fillText('Welcome to the server,', canvas.width / 2.5, canvas.height / 3.5);
-
-	// Add an exclamation point here and below
-	ctx.font = applyText(canvas, `${member.displayName}!`);
-	ctx.fillStyle = '#ffffff';
-	ctx.fillText(`${member.displayName}!`, canvas.width / 2.5, canvas.height / 1.8);
-
-	ctx.beginPath();
-	ctx.arc(125, 125, 100, 0, Math.PI * 2, true);
-	ctx.closePath();
-	ctx.clip();
-
-	const { body: buffer } = await snekfetch.get(member.user.displayAvatarURL);
-	const avatar = await Canvas.loadImage(buffer);
-	ctx.drawImage(avatar, 25, 25, 200, 200);
-
-	const attachment = new Discord.Attachment(canvas.toBuffer(), 'welcome-image.png');
-
-	channel.send(`Welcome to the server, ${member}!`, attachment);
-});*/
-
 
 client.login(process.env.TOKEN);
