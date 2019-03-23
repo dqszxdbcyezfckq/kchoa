@@ -98,5 +98,6 @@ exports.conf = {
   exports.help = {
     name: 'userinfo',
     description: 'Donne les informations sur l\'utilisateur',
-    usage: 'userinfo <mention>'
+    usage: 'userinfo <mention>',
+    category: 'info'
 };
