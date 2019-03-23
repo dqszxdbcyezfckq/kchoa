@@ -24,6 +24,5 @@ exports.run = async (client, message, args) => {
 exports.help = {
   name: 'osu',
   description: 'Donne vos stats osu',
-  usage: 'osu <pseudo>',
-  category: 'game'
+  usage: 'osu <pseudo>'
 };

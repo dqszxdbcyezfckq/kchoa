@@ -33,6 +33,5 @@ if(!definedNumber) {
     name: 'roll',
     description: 'Donne un nombre aléatoire',
     usage: 'roll',
-    usage2: 'roll <nombre>',
-  category: 'divers'
+    usage2: 'roll <nombre>'
   };

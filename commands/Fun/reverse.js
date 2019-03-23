@@ -41,6 +41,5 @@ var text = message.content.substring(10);
       exports.help = {
         name: 'reverse',
         description: 'Inverse le message que vous voulez',
-        usage: 'reverse <mot/phrase>',
-        category: 'divers'
+        usage: 'reverse <mot/phrase>'
       };

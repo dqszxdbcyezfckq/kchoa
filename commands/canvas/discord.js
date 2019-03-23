@@ -9,7 +9,7 @@ exports.run = (client, message, args) => {
     message.channel.send({
       files: [{
         attachment: `https://www.arcadia-api.xyz/api/v1/${type}?url=${member.user.displayAvatarURL}`,
-        name: `${type}.png`
+        name: `${type}.gif`
       }]
     })
     message.channel.stopTyping();
@@ -27,6 +27,5 @@ exports.conf = {
   exports.help = {
     name: `${type}`,
     description: `Envoie une image ${type}.`,
-    usage: `${type}`,
-    category: 'canvas'
+    usage: `${type}`
   };

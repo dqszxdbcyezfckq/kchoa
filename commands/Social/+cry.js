@@ -45,6 +45,5 @@ let defineduser = message.guild.member(message.mentions.users.first());
   exports.help = {
     name: 'cry',
     description: 'Pour pleurer au personne que vous souhaitez',
-    usage: 'cry <mention>',
-    category: 'action'
+    usage: 'cry [mention]'
   };

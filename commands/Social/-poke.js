@@ -45,6 +45,5 @@ exports.conf = {
   exports.help = {
     name: 'poke',
     description: 'Pour toucher les personnes que vous souhaitez',
-    usage: 'poke <mention>',
-    category: 'action'
+    usage: 'poke [mention]'
   };

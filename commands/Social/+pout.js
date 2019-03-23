@@ -56,6 +56,5 @@ var pout = [
   exports.help = {
     name: 'pout',
     description: 'Pour bouder les gens',
-    usage: 'pout <mention>',
-    category: 'action'
+    usage: 'pout [mention]'
   };

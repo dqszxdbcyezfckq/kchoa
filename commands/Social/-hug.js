@@ -45,6 +45,5 @@ exports.run = (client, message, args) => {
   exports.help = {
     name: 'hug',
     description: 'Pour faire des calîns au personne que vous souhaitez',
-    usage: 'hug <mention>',
-    category: 'action'
+    usage: 'hug [mention]'
   };

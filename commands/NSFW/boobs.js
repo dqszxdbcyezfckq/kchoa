@@ -34,6 +34,5 @@ exports.conf = {
   exports.help = {
     name: 'boobs',
     description: 'Envoie une image aléatoire de boobs',
-    usage: 'boobs',
-    category: 'porn'
+    usage: 'boobs'
   };

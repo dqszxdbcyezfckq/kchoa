@@ -45,6 +45,5 @@ exports.run = (client, message, args) => {
   exports.help = {
     name: 'feed',
     description: 'Pour nourrir les personne que vous souhaitez',
-    usage: 'feed <mention>',
-    category: 'action'
+    usage: 'feed [mention]'
   };

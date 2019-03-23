@@ -31,6 +31,5 @@ exports.conf = {
   exports.help = {
     name: 'asian',
     description: 'Envoie une image aléatoire de porno asiatique',
-    usage: 'asian',
-    category: 'porn'
+    usage: 'asian'
   };

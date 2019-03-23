@@ -67,6 +67,5 @@ exports.conf = {
   exports.help = {
     name: 'removerole',
     description: 'Enlever un rôle a l\'utilisateur mentionné',
-    usage: 'removerole <mention> <nom du rôle>',
-    category: 'mod'
+    usage: 'removerole <mention> <nom du rôle>'
   };

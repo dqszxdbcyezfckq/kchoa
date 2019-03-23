@@ -31,6 +31,5 @@ exports.conf = {
   exports.help = {
     name: 'hentai',
     description: 'Envoie de gif de hentai',
-    usage: 'hentai',
-    category: 'porn'
+    usage: 'hentai'
   };

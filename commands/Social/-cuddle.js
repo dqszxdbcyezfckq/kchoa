@@ -45,6 +45,5 @@ exports.run = (client, message, args) => {
   exports.help = {
     name: 'cuddle',
     description: 'Pour réconforter les personnes que vous souhaitez',
-    usage: 'cuddle <mention>',
-    category: 'action'
+    usage: 'cuddle [mention]'
   };

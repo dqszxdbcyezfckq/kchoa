@@ -91,6 +91,5 @@ exports.conf = {
 exports.help = {
   name: 'tempmute',
   description: 'Mute une personne avec une durée définie',
-  usage: 'tempmute <mention> <durée>',
-  category: 'mod'
+  usage: 'tempmute <mention> <durée>'
 };

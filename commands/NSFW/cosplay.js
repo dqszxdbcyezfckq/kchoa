@@ -34,6 +34,5 @@ exports.conf = {
   exports.help = {
     name: 'cosplay',
     description: 'Envoie une image aléatoire de porno en cosplay',
-    usage: 'cosplay',
-    category: 'porn'
+    usage: 'cosplay'
   };

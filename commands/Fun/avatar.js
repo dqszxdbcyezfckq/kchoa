@@ -57,6 +57,5 @@ exports.help = {
   name: 'avatar',
   description: 'Permet de voir votre avatar ou celui du\'n autre',
   usage: 'avatar',
-  usage2: 'avatar <mention>',
-  category: 'divers'
+  usage2: 'avatar <mention>'
 };

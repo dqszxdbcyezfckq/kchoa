@@ -54,6 +54,5 @@ exports.conf = {
 exports.help = {
   name: 'ban',
   description: 'Ban l\'utilisateur mentionné',
-  usage: 'ban <mention>',
-  category: 'admin'
+  usage: 'ban <mention>'
 };
