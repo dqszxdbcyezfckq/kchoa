@@ -18,22 +18,12 @@ exports.run = (client, message, params) => {
     fs.readdir('./commands/Mod/', (err, filesinfo2) => {
       if (err) console.error(err);
 
-    /*var HelpEmbed = new Discord.RichEmbed()
+    var HelpEmbed = new Discord.RichEmbed()
     .setTitle(`Liste des commandes de la catégorie mod`)
     .setDescription(`(Il y a un total de **${filesinfo.length + filesinfo2.length}** commandes dans cette catégorie)\n\nUtilise **${prefix}help <commande>** pour plus d'infos sur une commande`)
     .setColor(Math.floor(Math.random() * 16777214) + 1)
     .addField("Admin", "`ban`, `lockdown`, `unban`, `prefix`")
     .addField("Modo", "`kick`, `mute`, `tempmute`, `purge`, `addrole`, `removerole`")
-    .setFooter(client.user.username, client.user.displayAvatarURL).setTimestamp()
-
-    message.channel.send(HelpEmbed);*/
-
-    var HelpEmbed = new Discord.RichEmbed()
-    .setTitle(`Liste des commandes de la catégorie mod`)
-    .setDescription(`(Il y a un total de **${filesinfo.length + filesinfo2.length}** commandes dans cette catégorie)\n\nUtilise **${prefix}help <commande>** pour plus d'infos sur une commande`)
-    .setColor(Math.floor(Math.random() * 16777214) + 1)
-    .addField("Admin", `${client.commands.filter(cmd => cmd.help.category =="admin").map(c => `\`\`${c.help.name}\`\``)}`)
-    .addField("Modo", `${client.commands.filter(cmd => cmd.help.category =="mod").map(c => `\`\`${c.help.name}\`\``)}`)
     .setFooter(client.user.username, client.user.displayAvatarURL).setTimestamp()
 
     message.channel.send(HelpEmbed);

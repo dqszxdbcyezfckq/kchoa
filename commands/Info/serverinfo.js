@@ -94,6 +94,5 @@ const daysJoined = millisJoined / 1000 / 60 / 60 / 24;
   exports.help = {
     name: 'serverinfo',
     description: 'Donne les informations sur le seveur',
-    usage: 'serverinfo',
-    category: 'info'
+    usage: 'serverinfo'
   };

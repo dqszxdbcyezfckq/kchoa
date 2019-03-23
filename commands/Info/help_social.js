@@ -22,7 +22,7 @@ exports.run = (client, message, params) => {
     .setTitle(`Liste des commandes de la catégorie social`)
     .setDescription(`(Il y a un total de **${filesinfo.length}** commandes dans cette catégorie)\n\nUtilise **${prefix}help <commande>** pour plus d'infos sur une commande`)
     .setColor(Math.floor(Math.random() * 16777214) + 1)
-    .addField("Action", `${client.commands.filter(cmd => cmd.help.category =="action").map(c => `\`\`${c.help.name}\`\``)}`)
+    .addField("Action", "`cry`, `kiss`, `punch`, `pout`, `pat`, `hug`, `cuddle`, `feed`, `poke`, `tickle`, `slap`")
     .setFooter(client.user.username, client.user.displayAvatarURL).setTimestamp()
 
     message.channel.send(HelpEmbed);

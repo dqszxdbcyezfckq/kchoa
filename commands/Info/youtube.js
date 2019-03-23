@@ -40,6 +40,5 @@ exports.conf = {
     name: 'youtube',
     description: 'Faîte n\'importe qu\'elle recherche de vidéo youtube facilement',
     usage: 'youtube <recherche>',
-    usage2: 'youtube_search <recherche>',
-    category: 'recherche'
+    usage2: 'youtube_search <recherche>'
   };

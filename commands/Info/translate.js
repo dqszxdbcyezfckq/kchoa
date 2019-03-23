@@ -100,6 +100,5 @@ module.exports.run = async (bot, message, args) => {
   exports.help = {
     name: 'translate',
     description: 'Traduit une phrase ou un mot dans le language choisie',
-    usage: 'translate <langage> <text>',
-    category: 'divers'
+    usage: 'translate <langage> <text>'
   };

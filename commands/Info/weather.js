@@ -76,6 +76,5 @@ exports.conf = {
   exports.help = {
     name: 'weather',
     description: 'Donne la météo de l\'endroit souhaité',
-    usage: 'weather <Ville>',
-    category: 'recherche'
+    usage: 'weather <Ville>'
   };
