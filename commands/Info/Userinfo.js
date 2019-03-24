@@ -99,5 +99,5 @@ exports.conf = {
     name: 'userinfo',
     description: 'Donne les informations sur l\'utilisateur',
     usage: 'userinfo <mention>',
-    category: 'info'
+    category: "info"
 };

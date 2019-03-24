@@ -95,5 +95,5 @@ const daysJoined = millisJoined / 1000 / 60 / 60 / 24;
     name: 'serverinfo',
     description: 'Donne les informations sur le seveur',
     usage: 'serverinfo',
-    category: 'info'
+    category: "info"
   };

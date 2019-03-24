@@ -21,6 +21,5 @@ message.channel.send(ListEmbed);
   exports.help = {
     name: 'listrole',
     description: 'Je vous donne tout les roles du serveur.',
-    usage: 'listrole',
-    category: 'info'
+    usage: 'listrole'
   };

@@ -18,5 +18,5 @@ message.channel.send(`**${client.user.username} ping!** :ping_pong: ${new Date()
     name: 'ping',
     description: 'Ping/Pong command, vous donne aussi le ping du bot.',
     usage: 'ping',
-    category: 'info'
+    category: "info"
   };
