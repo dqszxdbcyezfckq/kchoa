@@ -55,5 +55,5 @@ exports.help = {
   name: 'ban',
   description: 'Ban l\'utilisateur mentionné',
   usage: 'ban <mention>',
-  category: 'canvas'
+  category: 'admin'
 };

@@ -59,5 +59,5 @@ exports.help = {
   name: 'lockdown',
   description: 'verrouille un channel pour la durée définie ``s``, ``m``, ``h``, ``d``',
   usage: 'lockdown <durée>',
-  category: 'canvas'
+  category: 'admin'
 };

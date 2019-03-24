@@ -43,5 +43,5 @@ exports.conf = {
     name: 'hackban',
     description: 'Ban l\'utilisateur mentionné',
     usage: 'hackban <ID>',
-    category: 'canvas'
+    category: 'admin'
   };

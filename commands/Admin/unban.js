@@ -42,5 +42,5 @@ try {
     name: 'unban',
     description: 'Unban un utilisateur.',
     usage: 'unban <ID>',
-    category: 'canvas'
+    category: 'admin'
   };

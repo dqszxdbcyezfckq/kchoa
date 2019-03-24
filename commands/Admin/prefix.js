@@ -54,5 +54,5 @@ exports.conf = {
     name: 'prefix',
     description: 'Change le prefix du bot',
     usage: 'prefix <nouveau prefix>',
-    category: 'canvas'
+    category: 'admin'
   };
