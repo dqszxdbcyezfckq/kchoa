@@ -41,5 +41,6 @@ try {
   exports.help = {
     name: 'unban',
     description: 'Unban un utilisateur.',
-    usage: 'unban <ID>'
+    usage: 'unban <ID>',
+    category: 'canvas'
   };

@@ -45,5 +45,6 @@ exports.conf = {
   exports.help = {
     name: 'pat',
     description: 'Pour faire des pat au personne que vous souhaitez',
-    usage: 'pat [mention]'
+    usage: 'pat [mention]',
+    category: "action"
   };

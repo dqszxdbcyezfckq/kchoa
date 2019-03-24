@@ -29,5 +29,6 @@ if(!args[0]){
   exports.help = {
     name: 'say',
     description: 'Répète tout ce que vous dîtes',
-    usage: 'say <mot/phrase>'
+    usage: 'say <mot/phrase>',
+    category: 'divers'
   };

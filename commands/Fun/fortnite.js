@@ -129,5 +129,6 @@ exports.conf = {
   exports.help = {
     name: 'fortnite',
     description: 'Donne vos stats fortnite',
-    usage: 'fortnite <plateforme> <pseudo>'
+    usage: 'fortnite <plateforme> <pseudo>',
+    category: 'game'
   };

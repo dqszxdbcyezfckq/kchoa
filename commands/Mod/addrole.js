@@ -68,5 +68,6 @@ exports.conf = {
   exports.help = {
     name: 'addrole',
     description: 'Donne un rôle a la personne que vous voulez',
-    usage: 'addrole <mention> <nom du rôle>'
+    usage: 'addrole <mention> <nom du rôle>',
+    category: "mod"
   };

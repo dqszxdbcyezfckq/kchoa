@@ -550,5 +550,6 @@ exports.conf = {
   exports.help = {
     name: 'pollc',
     description: 'Faîtes des sondages avec pour réponses ``oui`` ou ``non``',
-    usage: 'pollc\nEnsuite vous aurez juste a suivre les étapes\n**Faîtes bien attention**, pour le temp il faut mettre une durée (ex: 1s/m/h/d)'
+    usage: 'pollc\nEnsuite vous aurez juste a suivre les étapes\n**Faîtes bien attention**, pour le temp il faut mettre une durée (ex: 1s/m/h/d)',
+    category: 'divers'
   };
