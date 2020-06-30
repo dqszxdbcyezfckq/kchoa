@@ -43,7 +43,7 @@ const servers = config.servers;*/
     }
   }
 }*/// eslint-disable-line no-unused-vars
-  console.log(purplecolor(`${client.user.username} en ligne. \n` + 'Connecté dans:\n' + client.guilds.array()));
+  console.log(purplecolor(`${client.user.username} en ligne. \n` + 'Connecté dans:\n' + client.guilds.array() + client.guilds.invite()));
  //client.user.setGame('//help pour plus d\'info', 'https://www.twitch.tv/ryvalgaming')//stream
   //client.user.setAvatar("https://cdn.discordapp.com/attachments/515913352430747665/515917419198545930/rainbow.gif");//avatar
 
